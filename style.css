@@ -1,0 +1,58 @@
+/* CSS is valid in SCSS*/
+@import url(https://www.w3schools.com/w3css/4/w3.css);
+body {
+  background-color: lightgray;
+}
+
+a {
+  color: white;
+}
+
+ul {
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ul li {
+  background-color: blue;
+  list-style-type: none;
+  padding: 8px 16px;
+}
+
+ul li ul {
+  display: none;
+}
+
+ul li a {
+  color: white;
+}
+
+ul li a.active {
+  background-color: blue;
+}
+
+ul li a:hover {
+  background-color: red;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+div.img {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+
+div.avater {
+  height: 80px;
+  width: 80px;
+  background-color: yellow;
+}
+/*# sourceMappingURL=style.css.map */

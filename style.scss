@@ -1,0 +1,74 @@
+// Variables
+$primary-color:blue;
+$secondary-color:lightgray;
+// SASS ?
+/* CSS is valid in SCSS*/
+body{
+    background-color: $secondary-color;
+}
+
+a{
+    color: white;
+}
+
+// Basic Code Structure
+
+ul{
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    li{
+        background-color: $primary-color;
+        list-style-type: none;
+        padding: 8px 16px;
+        ul{
+            display: none;
+        }
+        a{
+            color: white;
+            &.active{
+                background-color: blue;
+            }
+            &:hover{
+                background-color: red;
+            }
+        }
+    }
+}
+// Import
+@import 'part2';
+@import url(https://www.w3schools.com/w3css/4/w3.css);
+// Mixin + Include
+@mixin sqare($val, $bg) {
+    height: $val;
+    width: $val;
+    background-color: $b;
+}
+div{
+    &.img{
+        @include sqare(100px, red);
+
+    }
+    &.avater{
+        @include sqare(80px, yellow);
+    }
+}
+// Extends
+$alert-color: red;
+.alert{
+    padding: 8px 20px;
+    border: 1px solid $alert-color;
+    color: $alert-color;
+}
+.serious-alert{
+    @extend .alert;
+    margin-top: 10px;
+    border-width: 4px;
+}
+
+// USE
+
+// Functions
+
